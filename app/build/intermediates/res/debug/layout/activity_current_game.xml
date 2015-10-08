@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kronologia.stonestats.CurrentGameActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/topVoidLL"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topVoidLL"
+            android:id="@+id/research_edittext"
+            android:hint="@string/search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cards_seen_textview"
+            android:layout_below="@+id/research_edittext"
+            android:text="@string/cards_view"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cards_seen_textview"
+            android:layout_above="@+id/endGameLL"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cost"/>
+
+                    <RadioGroup
+                        android:id="@+id/cost_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/cost0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="0" />
+
+                        <RadioButton
+                            android:id="@+id/cost1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1" />
+                        <RadioButton
+                            android:id="@+id/cost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2" />
+                        <RadioButton
+                            android:id="@+id/cost3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3" />
+                        <RadioButton
+                            android:id="@+id/cost4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4" />
+                        <RadioButton
+                            android:id="@+id/cost5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5" />
+                        <RadioButton
+                            android:id="@+id/cost6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6" />
+                        <RadioButton
+                            android:id="@+id/cost7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7" />
+                        <RadioButton
+                            android:id="@+id/cost8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8+" />
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/list_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="400dip"
+                android:scrollbars="vertical"
+                android:text="@string/hello_world" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/endGameLL"
+            android:layout_above="@id/adMob"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/victory_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/victory" />
+
+            <Button
+                android:id="@+id/defeat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defeat" />
+        </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adMob"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7381506339930431/8325812706" />
+</RelativeLayout>
+<!-- From: file:/C:/Users/Maxence/StudioProjects/HSData1/app/src/main/res/layout/activity_current_game.xml -->

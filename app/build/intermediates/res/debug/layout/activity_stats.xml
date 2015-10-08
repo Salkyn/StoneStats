@@ -1,0 +1,481 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_deck" />
+
+        <Spinner
+            android:id="@+id/deck_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <TableRow android:gravity="center" >
+
+            <TextView
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:padding="5dp"
+                android:text="@string/winrate" />
+
+            <TextView
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:padding="5dp"
+                android:text="@string/with_coin" />
+
+            <TextView
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:padding="5dp"
+                android:text="@string/without_coin" />
+
+            <TextView
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:padding="5dp"
+                android:text="@string/nb_games" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/paladin" />
+
+            <TextView
+                android:id="@+id/total_winrate1"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin1"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin1"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames1"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/warrior" />
+
+            <TextView
+                android:id="@+id/total_winrate2"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin2"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin2"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames2"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/hunter" />
+
+            <TextView
+                android:id="@+id/total_winrate3"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin3"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin3"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames3"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/shaman" />
+
+            <TextView
+                android:id="@+id/total_winrate4"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin4"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin4"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames4"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/druid" />
+
+            <TextView
+                android:id="@+id/total_winrate5"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin5"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin5"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames5"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/rogue" />
+
+            <TextView
+                android:id="@+id/total_winrate6"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin6"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin6"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames6"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/priest" />
+
+            <TextView
+                android:id="@+id/total_winrate7"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin7"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin7"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames7"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/warlock" />
+
+            <TextView
+                android:id="@+id/total_winrate8"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin8"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin8"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames8"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/mage" />
+
+            <TextView
+                android:id="@+id/total_winrate9"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin9"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin9"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan" />
+
+            <TextView
+                android:id="@+id/total_nbgames9"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/total"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_winrate0"
+                android:layout_column="2"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_winrate_coin0"
+                android:layout_column="3"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_winrate_nocoin0"
+                android:layout_column="4"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/nan"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_nbgames0"
+                android:layout_column="5"
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/zero"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adMob"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7381506339930431/8325812706" />
+</RelativeLayout><!-- From: file:/C:/Users/Maxence/StudioProjects/HSData1/app/src/main/res/layout/activity_stats.xml -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="classes_array">
+        <item>Paladin</item>
+        <item>Warrior</item>
+        <item>Hunter</item>
+        <item>Shaman</item>
+        <item>Druid</item>
+        <item>Rogue</item>
+        <item>Priest</item>
+        <item>Warlock</item>
+        <item>Mage</item>
+    </string-array>
+
+</resources>
