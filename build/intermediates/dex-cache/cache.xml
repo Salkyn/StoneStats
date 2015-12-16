@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\internal_impl-22.0.0-0e5e5ed3a55fcbfea153502341a3b21bb6820f61.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\classes-f9ab31c5d2d83eac45bd2521098534c5ee435379.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\classes-63addb8e83f91ba87506b090d1230d5f74de5ea8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\classes-39be9fae64b05ddff8688e3f63c009654f9c1019.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\classes-8a855fbb055e99a0a28517c84b8060e522753632.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\support-annotations-22.0.0-c64391f888d7bc41ef48eeb8fe33d4746980f480.jar" />
+    </item>
+    <item
+        jar="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89">
+        <dex dex="C:\Users\Maxence\StudioProjects\HSData1\app\build\intermediates\pre-dexed\release\classes-5c83b1934d5f16e67393085c220ab35c322cc4d0.jar" />
+    </item>
+
+</items>
